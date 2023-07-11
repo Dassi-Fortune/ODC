@@ -38,4 +38,17 @@
  decrement = decrement - 1;
  console.log(increment , decrement)
 
+ /**working on strings */
+ var initialVariable= "Mr Nde said 'hello to you all'";
+ console.log(initialVariable)
+ // using back tick
+ var initialVariable= `Mr Nde said "I'm a plug"`;
+ console.log(initialVariable)
+ var initialVariable= `Mr Nde said \n I'm a plug`;
+ console.log(initialVariable)
+ var initialVariable= `Mr Nde said \t I'm a plug`;
+ console.log(initialVariable)
+
+ //immutable
+
  

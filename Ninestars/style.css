@@ -1,0 +1,53 @@
+:root{
+    --main-color:white;
+    --secondary-color:orange;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/* start of nav bar code */
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}  
+
+.navbar{
+    background-color: white;
+    padding: 1.5rem 0;
+}
+
+.navbar h1{
+    color: black;
+    
+}
+
+.navbar ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    padding-left: 1rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.navbar span, .active, .navbar a:hover{
+    color: var(--secondary-color);
+}
+/* End of nav bar code */
+
+

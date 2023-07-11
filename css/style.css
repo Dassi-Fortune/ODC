@@ -1,0 +1,196 @@
+:root{
+    --main-color:black;
+    --secondary-color:orange;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/* start of nav bar code */
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}  
+
+.navbar{
+    background-color: var(--main-color);
+    padding: 1.5rem 0;
+}
+
+.navbar h1{
+    color: white;
+    
+}
+
+.navbar ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    padding-left: 1rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar span, .active, .navbar a:hover{
+    color: var(--secondary-color);
+}
+/* End of nav bar code */
+
+
+/* Start of hero */
+.hero{
+    background-color: var(--secondary-color);
+    height: 300px;
+}
+.hero{
+    display: flex;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.hero h1, .hero p{
+margin-bottom: 1rem;
+}
+
+.hero h1{
+    font-size: 30px;
+}
+
+.hero p{
+    font-weight: 500;
+}
+
+.hero a{
+    background-color: var(--main-color);
+    padding: 1rem;
+    display: inline-block;
+    
+}
+.hero a:hover{
+    opacity: 0.8;
+}
+
+
+
+/* End of hero */
+
+/* start of about section  */
+.about{
+    margin-top: 2rem;
+    padding: 0.5rem;
+}
+
+.about img{
+    width: 100%;
+}
+
+.about .container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.section-title{
+    text-transform: capitalize;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.section-title h1{
+    display: inline-block;
+    padding-bottom: 0.2rem;
+    border-bottom: 3px solid var(--secondary-color);
+    font-size: 25px;
+}
+
+.about p{
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 0.2rem;
+}
+
+
+
+
+.coloured{
+    background-color: var(--secondary-color);
+}
+/* end of about */
+/*contact page*/
+.form .section-title{
+    text-align: center;
+    margin-top: 1rem;
+}
+.form label{
+    display: block;
+}
+.form input,
+.form textarea{
+    width: 100%;
+    padding-area: 0.5rem;
+}
+.form button {
+    background-color: var(--main-color);
+    color: white;
+    outline: none;
+    text-transform: Capitalize;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    border-radius: 10px ;
+    padding: 0.6rem 1.2rem;
+    text-align: center;
+}
+
+
+
+/*end of contact page*/
+
+
+/* start of footer */
+
+footer{
+    background-color: var(--main-color);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 1rem;
+}
+/* end of footer */
+
+
+/* start of responsiveness */
+@media(max-width:991px){
+.navbar .container{
+    display: block;
+    text-align: center;
+}
+
+.about .container{
+    display: block;
+
+}
+.navbar ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+}
+
+/* end of responsiveness */

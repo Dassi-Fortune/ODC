@@ -7,48 +7,25 @@
  // var and let declare variables that can be changed at any time while connst declare variables that cannnot be declared twice
  
  //examples
- var initialVariable;
- var myVariable=10;
- let myVariableName="hello";
- const variable= 12;
- console.log(typeof(initialVariable))
- console.log(typeof(myVariable))
- console.log(typeof(he))
- console.log(typeof(myVariableName))
- console.log(myVariable)
- console.log(myVariableName)
- console.log(variable)
+ /** working on arrays */
+ const myArr= [ 23, "hello", null, true, ["yo", 1, 3]]
+ console.log(myArr[5])
 
- /** operators in javascript */
- // Addition, subtraction, multiplication, division and modulo
- var a=2, b=10;
- console.log(a+b)
- console.log(a*b)
- console.log(a/b)
- console.log(a%b)
- console.log(a-b)
+ var myArray= [23, 45,"hello", null, true, ["yo", 1, 2]];
+ console.log(myArr);
+ myArr[2] = "bonjour"
+ console.log(myArr)
 
- var increment= 3, decrement =10;
- let temp= 0
- console.log(increment, decrement)
- // increment++
- temp= ++increment + 2
- console.log(temp)
- //decrement--
- decrement = decrement - 1;
- console.log(increment , decrement)
+ // myArr.pop()
+ // myArr.push ("hello")
+ // myArr.shift();
+ // myArr.unshift("bonjour")
+ var last= myArr.push("bonjour")
 
- /**working on strings */
- var initialVariable= "Mr Nde said 'hello to you all'";
- console.log(initialVariable)
- // using back tick
- var initialVariable= `Mr Nde said "I'm a plug"`;
- console.log(initialVariable)
- var initialVariable= `Mr Nde said \n I'm a plug`;
- console.log(initialVariable)
- var initialVariable= `Mr Nde said \t I'm a plug`;
- console.log(initialVariable)
+ console.log(last)
+ console.log(myArr)
 
- //immutable
-
- 
+ myArr.map((i, j) =>{
+    // console.log("index: " + j + ", value: " + i);
+    console.log(`index: ${j}, value: ${i}`)
+ })
